@@ -1,0 +1,21 @@
+
+
+underlay:
+    local:
+        asn: 65000
+    neighbors:
+      - interface: ge-0/0/1
+        name: vmx3
+        asn: 65100
+        peer_ip: 10.10.0.2
+        local_ip: 10.10.0.1
+      - interface: ge-0/0/2
+        name: vmx4
+        asn: 65101
+        peer_ip: 10.10.1.2
+        local_ip: 10.10.1.1
+      - interface: ge-0/0/0
+        name: qfx1
+        asn: 65102
+        peer_ip: 10.10.2.2
+        local_ip: 10.10.2.1

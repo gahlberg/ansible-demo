@@ -1,0 +1,52 @@
+interfaces {
+{% for neighbor in underlay.neighbors %}
+    {{ neighbor.interface }} {
+        mtu 9192;
+        unit 0 {
+            description "to {{ neighbor.name }}";
+            family inet {
+                mtu 9000;
+                address {{ neighbor.local_ip }}/24;
+            }
+        }
+    }
+{% endfor %}
+}
+protocols {
+    bgp {
+        group underlay {
+            export ipv4-routes;
+            type external;
+            local-as {{ underlay.local.asn }};
+            multipath multiple-as;
+{% for neighbor in underlay.neighbors %}
+            neighbor {{ neighbor.peer_ip }} {
+                peer-as {{ neighbor.asn }};
+            }
+{% endfor %}
+        }
+    }
+}
+
+routing-options {
+    router-id {{ loopback_ip }};
+    forwarding-table {
+        export LB;
+    }
+}
+
+policy-options {
+    policy-statement LB {
+        then {
+            load-balance per-packet;
+        }
+    }
+    policy-statement ipv4-routes {
+        term 10 {
+            then {
+                next-hop self;
+                accept;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+system {
+    host-name {{ inventory_hostname }};
+    services {
+        netconf {
+            ssh;
+        }
+        ssh;
+    }
+    syslog  {
+        user * {
+            any emergency;
+        }
+        file messages {
+            any notice;
+        }
+    }
+}
+interfaces {
+    {{ mgmt_port }} {
+        unit 0 {
+            family inet {
+              address {{ junos_host }}/{{ mgmt_sub_mask }};
+            }
+        }
+    }
+    lo0 {
+        unit 0 {
+            family inet {
+                address {{ loopback_ip }}/32
+            }
+        }
+    }
+}

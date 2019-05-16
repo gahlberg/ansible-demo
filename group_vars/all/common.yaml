@@ -1,0 +1,15 @@
+# System variable used to define temporary directory
+# please update tmp_dir variable if needed
+
+
+# Local directory where both partial configurations will be stored
+
+tmp_dir: /tmp
+build_dir: "{{ tmp_dir }}/{{ inventory_hostname }}/tmp"
+
+
+# Local directory where the merged configuration will be stored
+
+
+junos_conf_dir: "config"
+junos_conf: "{{ junos_conf_dir }}/{{ inventory_hostname }}.conf"

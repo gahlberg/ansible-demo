@@ -1,0 +1,21 @@
+---
+
+- name: Resetting devices to Original Configs
+  hosts: juniper
+  connection: local
+  gather_facts: no
+  roles:
+  - Juniper.junos 
+
+  tasks: 
+    - name: Revert to the Original Configuration
+      junos_install_config: 
+        host: "{{ junos_host }}"
+        port: "{{ netconf_port }}"
+        user: "{{ junos_ssh_user }}"
+        passwd: "{{ junos_pwd_clear }}"
+        overwrite: yes
+        replace: yes
+      junos_command:
+        commands: load override pre-ansible.config
+
