@@ -17,5 +17,6 @@
         user: "{{ junos_ssh_user }}"
         passwd: "{{ junos_pwd_clear }}"
         file: "{{ junos_conf }}"
+        check_commit_wait: 60
         overwrite: no
         replace: no
