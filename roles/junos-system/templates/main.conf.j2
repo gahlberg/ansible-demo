@@ -1,5 +1,6 @@
 system {
     host-name {{ inventory_hostname }};
+    time-zone {{ time_zone }};
     services {
         netconf {
             ssh;
