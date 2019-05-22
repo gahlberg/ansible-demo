@@ -15,8 +15,8 @@ system {
         }
     }
     ntp {
-        server 10.88.88.4;
-        server 10.88.88.60 prefer;
+        server {{ ntp_host1 }} prefer;
+        server {{ ntp_host2 }};
     }
 }
 interfaces {
