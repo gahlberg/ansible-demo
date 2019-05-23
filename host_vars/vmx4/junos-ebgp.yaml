@@ -1,14 +1,14 @@
 underlay:
     local:
-        asn: 65101
+        asn: 65102
     neighbors:
       - interface: ge-0/0/0
         name: vmx1
-        asn: 65000
+        asn: 65001
         peer_ip: 10.10.1.1
         local_ip: 10.10.1.2
       - interface: ge-0/0/1
         name: vmx2
-        asn: 65001
+        asn: 65002
         peer_ip: 10.10.4.1
         local_ip: 10.10.4.2
