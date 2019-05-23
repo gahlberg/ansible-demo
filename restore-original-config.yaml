@@ -5,16 +5,12 @@
   connection: local
   gather_facts: no
   roles:
-  - Juniper.junos 
-  tasks: 
-    - name: Revert to the Original Configuration
-      junos_install_config: 
+  - Juniper.junos
+  tasks:
+    - name: Rollback the configuration to original
+      junos_config:
         host: "{{ junos_host }}"
         port: "{{ netconf_port }}"
-        user: "{{ junos_ssh_user }}"
-        passwd: "{{ junos_pwd_clear }}"
-        overwrite: yes
-        replace: yes
-      junos_command:
-        commands: load override pre-ansible.conf
-
+        username: "{{ junos_ssh_user }}"
+        password: "{{ junos_pwd_clear }}"
+        rollback: 1
