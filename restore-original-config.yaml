@@ -6,7 +6,6 @@
   gather_facts: no
   roles:
   - Juniper.junos 
-
   tasks: 
     - name: Revert to the Original Configuration
       junos_install_config: 
