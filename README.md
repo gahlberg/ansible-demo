@@ -130,3 +130,7 @@ After building your VM complete the following steps:
 5.	And once your WISTAR VMs are setup and running with mgmt IPs run the Ansible Playbook:
 
 	•	sudo ansible-playbook -i devices.ini generate-and-commit.yaml
+	
+	You should see output similar to the following:
+	
+	
