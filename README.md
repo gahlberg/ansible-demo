@@ -72,10 +72,14 @@ After building your VM complete the following steps:
 
 1.	To Install Ansible and PPA on your VM:
 
-•	$ sudo apt update 
-•	$ sudo apt install software-properties-common
-•	$ sudo apt-add-repository --yes --update ppa:ansible/ansible
-•	$ sudo apt install ansible
+	•	$ sudo apt update 
+	
+	•	$ sudo apt install software-properties-common
+	
+	•	$ sudo apt-add-repository --yes --update ppa:ansible/ansible
+	
+	•	$ sudo apt install ansible
+	
 
 2.	PyEZ installation
 •	sudo apt-get update
