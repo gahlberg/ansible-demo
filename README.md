@@ -11,7 +11,7 @@ The main Ansible Playbook generate-and-commit.yaml uses the junos_install_config
 The devices.ini file is the Ansible inventory file which contains parameters you would change specific to your environment, such as the junos_host under juniper:children and host variables under juniper:vars.
 To run the playbook simply issue as root:
 sudo ansible-playbook -i devices.ini generate-and-commit.yaml
-Supported Lab Environments and System Requirements
+## Supported Lab Environments and System Requirements
 To run this the following lab simulation tools have been tested:
 
 WISTAR
@@ -35,14 +35,14 @@ Although setting these up is out of scope for this document, some suggestions an
 •	128 GB RAM
 •	1TB hard-drive
 
-Juniper VMs tested
+## Juniper VMs tested
 The following Juniper VMs have been tested:
 
 1.	vMX – 17.1R1.8
 2.	vQFX RE – 15.1X53-D60
 3.	vQFX PFE – cosim 20160609-2
 
-How do I get started?
+## How do I get started?
 The first step (if you don’t have one already) is to build an Ansible Control Server VM (in my case Ubuntu 16.04) with all required packages, cloning this repository from GitHub, and listed VM specs that I have tested this with:
 
 •	VM Ubuntu 16.04 with 6 vCPUs
