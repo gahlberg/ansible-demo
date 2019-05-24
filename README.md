@@ -32,17 +32,27 @@ Although setting these up is out of scope for this document, some suggestions an
 1.	For WISTAR, I have a dedicated DELL R610 running Ubuntu 16.04 Xenial with the following specs:
 
 	•	Dual core CPU with 24 Logical Processors
+	
 	•	192 GB RAM
+	
 	•	2 TB hard-drive
+	
 
 2.	For Eve-NG, it is an Ubuntu 16.04 Xenial VM per the EVE-NG OVA install running on ESXi 6.5 with the following specs for the Server and VM:
-•	The Server (dedicated) is a DELL R610 with Dual Core CPUs with 16 Logical Processors
-•	192 GB RAM
-•	3 TB hard-drive
 
-•	Eve-NG VM is 16 vCPUs (and be sure to check the box under CPU for – Expose hardware assisted virtualization to the guest OS
-•	128 GB RAM
-•	1TB hard-drive
+	•	The Server (dedicated) is a DELL R610 with Dual Core CPUs with 16 Logical Processors
+	
+	•	192 GB RAM
+	
+	•	3 TB hard-drive
+	
+
+	•	Eve-NG VM is 16 vCPUs (and be sure to check the box under CPU for – Expose hardware assisted virtualization to the guest OS
+	
+	•	128 GB RAM
+	
+	•	1TB hard-drive
+	
 
 ## Juniper VMs tested
 The following Juniper VMs have been tested:
