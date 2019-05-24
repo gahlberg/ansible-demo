@@ -15,9 +15,11 @@ sudo ansible-playbook -i devices.ini generate-and-commit.yaml
 To run this the following lab simulation tools have been tested:
 
 WISTAR
+
 	https://github.com/Juniper/wistar
 
 EVE-NG
+
 	https://www.eve-ng.net/
 
 Although setting these up is out of scope for this document, some suggestions and what was tested is provided here for guidance.
