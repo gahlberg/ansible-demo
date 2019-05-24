@@ -14,7 +14,7 @@ The devices.ini file is the Ansible inventory file which contains parameters you
 
 To run the playbook simply issue as root:
 
-sudo ansible-playbook -i devices.ini generate-and-commit.yaml
+	sudo ansible-playbook -i devices.ini generate-and-commit.yaml
 
 ## Supported Lab Environments and System Requirements
 To run this the following lab simulation tools have been tested:
