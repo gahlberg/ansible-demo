@@ -7,10 +7,15 @@ This is a set of Ansible Playbooks that will generate two configuration files fo
 	2.	An eBGP configuration for the IP Fabric ( junos-ebgp role )
 	
 It will join the two configurations above into a single file with the build-config role.
+
 The main Ansible Playbook generate-and-commit.yaml uses the junos_install_config from Ansible Galaxy which going forward will be replaced with juniper_junos_config (which now contains the modules junos_commit, junos_get_config, junos_install_config, and junos_rollback).  As of this posting, this repository still uses junos_install_config.
+
 The devices.ini file is the Ansible inventory file which contains parameters you would change specific to your environment, such as the junos_host under juniper:children and host variables under juniper:vars.
+
 To run the playbook simply issue as root:
+
 sudo ansible-playbook -i devices.ini generate-and-commit.yaml
+
 ## Supported Lab Environments and System Requirements
 To run this the following lab simulation tools have been tested:
 
