@@ -18,6 +18,8 @@ The main Ansible Playbook generate-and-commit.yaml uses the junos_install_config
 
 The devices.ini file is the Ansible inventory file which contains parameters you would change specific to your environment, such as the junos_host under juniper:children and host variables under juniper:vars.
 
+![screenshot](docs/screenshots/devices-ini.png "Devices.ini")
+
 To run the playbook simply issue as root:
 
 	sudo ansible-playbook -i devices.ini generate-and-commit.yaml
