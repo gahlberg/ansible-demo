@@ -88,69 +88,73 @@ After building your VM complete the following steps:
 
 1.	To Install Ansible and PPA on your VM:
 
-	•	$ sudo apt update 
+		•	$ sudo apt update 
 	
-	•	$ sudo apt install software-properties-common
+		•	$ sudo apt install software-properties-common
 	
-	•	$ sudo apt-add-repository --yes --update ppa:ansible/ansible
+		•	$ sudo apt-add-repository --yes --update ppa:ansible/ansible
 	
-	•	$ sudo apt install ansible
+		•	$ sudo apt install ansible
 	
 
 
 2.	PyEZ installation
 
-	•	sudo apt-get update
+		•	sudo apt-get update
 	
-	•	sudo apt-get install python-dev libxml2-dev python-pip wget
+		•	sudo apt-get install python-dev libxml2-dev python-pip wget
 	
-	•	wget https://bootstrap.pypa.io/get-pip.py -O - | sudo python
+		•	wget https://bootstrap.pypa.io/get-pip.py -O - | sudo python
 	
-	•	sudo apt-get install libxslt1-dev libssl-dev libffi-dev
+		•	sudo apt-get install libxslt1-dev libssl-dev libffi-dev
 	
 	•	You also may need these: 
 	
-		•	sudo apt-get install python-setuptools
+			•	sudo apt-get install python-setuptools
 		
-		•	pip install -U setuptools
+			•	pip install -U setuptools
 		
-		•	pip install cryptography
+			•	pip install cryptography
 		
-		•	pip install enum
+			•	pip install enum
 		
-		•	pip install enum34
+			•	pip install enum34
 		
-		•	pip install ipaddress
+			•	pip install ipaddress
 		
-	•	sudo pip install junos-eznc
+		
+		•	sudo pip install junos-eznc
 	
-	•	sudo pip install -U junos-eznc
+		•	sudo pip install -U junos-eznc
 	
 
 
 3.	Installation of Ansible modules for Junos automation (Ansible Galaxy):
 
-	•	sudo apt-get update
+		•	sudo apt-get update
 	
-	•	sudo apt-get upgrade
+		•	sudo apt-get upgrade
 	
-	•	sudo apt-get install -y python-dev libxml2-dev python-pip libxslt1-dev build-essential libssl-dev libffi-dev git
+		•	sudo apt-get install -y python-dev libxml2-dev python-pip libxslt1-dev build-essential libssl-dev libffi-dev git
 	
-	•	sudo pip install junos-eznc jxmlease wget jsnapy requests 
+		•	sudo pip install junos-eznc jxmlease wget jsnapy requests 
 	
-	•	ansible-galaxy install Juniper.junos
+		•	ansible-galaxy install Juniper.junos
 
 
 
 4.	After successful Installation proceed to your home directory and clone the repository;
 
-	•	git clone https://github.com/gahlberg/ansible-demo.git
+
+		•	git clone https://github.com/gahlberg/ansible-demo.git
 
 
 5.	And once your EVE-NG or WISTAR VMs are setup and running with mgmt IPs run the Ansible Playbook:
 
-	•	sudo ansible-playbook -i devices.ini generate-and-commit.yaml
-	
+
+		•	sudo ansible-playbook -i devices.ini generate-and-commit.yaml
+
+
 	You should see output similar to the following:
 	
 	![screenshot](docs/screenshots/ansible-play.png)
