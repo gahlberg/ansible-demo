@@ -133,4 +133,4 @@ After building your VM complete the following steps:
 	
 	You should see output similar to the following:
 	
-	[<img src=ansible-play.png width=470>](https://github.com/gahlberg/ansible-demo/docs/screenshots/ansible-play.png)
+	![screenshot](docs/screenshots/ansible-play.png)
