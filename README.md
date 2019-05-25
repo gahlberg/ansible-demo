@@ -38,6 +38,8 @@ Although setting these up is out of scope for this document, some suggestions an
 
 1.	For WISTAR, I have a dedicated DELL R610 running Ubuntu 16.04 Xenial with the following specs:
 
+![screenshot](docs/screenshots/WISTAR-Server.png "Wistar Server")
+
 	•	Dual core CPU with 24 Logical Processors
 	
 	•	192 GB RAM
