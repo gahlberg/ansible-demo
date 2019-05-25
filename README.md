@@ -157,6 +157,6 @@ After building your VM complete the following steps:
 	
 6.	Once the playbook has successfully completed as above, simple check eBGP peering on vmx1 by issuing "show bgp summary""
 
-![screenshot](docs/screenshots/example-output.png "vmx1 eBGP peers")
+	![screenshot](docs/screenshots/example-output.png "vmx1 eBGP peers")
 
 
