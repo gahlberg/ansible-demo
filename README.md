@@ -85,6 +85,7 @@ The first step (if you don’t have one already) is to build an Ansible Control 
 
 After building your VM complete the following steps:
 
+
 1.	To Install Ansible and PPA on your VM:
 
 	•	$ sudo apt update 
@@ -95,6 +96,7 @@ After building your VM complete the following steps:
 	
 	•	$ sudo apt install ansible
 	
+
 
 2.	PyEZ installation
 
@@ -125,6 +127,7 @@ After building your VM complete the following steps:
 	•	sudo pip install -U junos-eznc
 	
 
+
 3.	Installation of Ansible modules for Junos automation (Ansible Galaxy):
 
 	•	sudo apt-get update
@@ -136,11 +139,13 @@ After building your VM complete the following steps:
 	•	sudo pip install junos-eznc jxmlease wget jsnapy requests 
 	
 	•	ansible-galaxy install Juniper.junos
-	
+
+
 
 4.	After successful Installation proceed to your home directory and clone the repository;
 
 	•	git clone https://github.com/gahlberg/ansible-demo.git
+
 
 5.	And once your WISTAR VMs are setup and running with mgmt IPs run the Ansible Playbook:
 
@@ -149,3 +154,5 @@ After building your VM complete the following steps:
 	You should see output similar to the following:
 	
 	![screenshot](docs/screenshots/ansible-play.png)
+	
+6.	Test
