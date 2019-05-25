@@ -163,4 +163,4 @@ After building your VM complete the following steps:
 
 Any questions or issues encountered feel free to reach out to me at gahlberg@diligent-networks.com
 
-That's all for now!
+That's all for now, ENJOY!
