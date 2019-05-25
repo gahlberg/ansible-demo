@@ -147,7 +147,7 @@ After building your VM complete the following steps:
 	•	git clone https://github.com/gahlberg/ansible-demo.git
 
 
-5.	And once your WISTAR VMs are setup and running with mgmt IPs run the Ansible Playbook:
+5.	And once your EVE-NG or WISTAR VMs are setup and running with mgmt IPs run the Ansible Playbook:
 
 	•	sudo ansible-playbook -i devices.ini generate-and-commit.yaml
 	
