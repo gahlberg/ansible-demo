@@ -155,7 +155,7 @@ After building your VM complete the following steps:
 	
 	![screenshot](docs/screenshots/ansible-play.png)
 	
-6.	Once the playbook has successfully completed as above, simple check eBGP peering on vmx1 by issuing "show bgp summary""
+6.	Once the playbook has successfully completed as above, simple check eBGP peering on vmx1 by issuing "show bgp summary" and you should see output similar to the following:
 
 	![screenshot](docs/screenshots/example-output.png "vmx1 eBGP peers")
 
