@@ -49,6 +49,8 @@ Although setting these up is out of scope for this document, some suggestions an
 
 2.	For Eve-NG, it is an Ubuntu 16.04 Xenial VM per the EVE-NG OVA install running on ESXi 6.5 with the following specs for the Server and VM:
 
+![screenshot](docs/screenshots/EVE-NG-VM.png "EVE-NG ESXi VM")
+
 	•	The Server (dedicated) is a DELL R610 with Dual Core CPUs with 16 Logical Processors
 	
 	•	192 GB RAM
