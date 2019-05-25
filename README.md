@@ -2,6 +2,8 @@
 
 ![screenshot](docs/screenshots/eve-ng-underlay.png "EVE-NG")
 
+![screenshot](docs/screenshots/wistar-underlay.png "Wistar")
+
 This is a set of Ansible Playbooks that will generate two configuration files for each node that uses Jinja2 Templates to build the following configuration files:
 
 	1.	 A System and Common Configuration ( junos-system role )
