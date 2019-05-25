@@ -1,6 +1,6 @@
 ## Ansible Playbooks to build an Underlay configuration onto vMX and vQFX nodes in EVE-NG or WISTAR
 
-![screenshot](docs/screenshots/eve-ng-underlay.png)
+![screenshot](docs/screenshots/eve-ng-underlay.png "EVE-NG")
 
 This is a set of Ansible Playbooks that will generate two configuration files for each node that uses Jinja2 Templates to build the following configuration files:
 
