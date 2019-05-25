@@ -77,11 +77,13 @@ The following Juniper VMs have been tested:
 ## How do I get started?
 The first step (if you don’t have one already) is to build an Ansible Control Server VM (in my case Ubuntu 16.04) with all required packages, cloning this repository from GitHub, and listed VM specs that I have tested this with:
 
-•	VM Ubuntu 16.04 with 6 vCPUs
+![screenshot](docs/screenshots/Ansible Control Server-VM.png "Ansible Control Server")
 
-•	16 GB RAM
+	•	VM Ubuntu 16.04 with 6 vCPUs
 
-•	250 GB hard-drive
+	•	16 GB RAM
+
+	•	250 GB hard-drive
 
 ![screenshot](docs/screenshots/Ansible Control Server-VM.png "Ansible Control Server")
 
