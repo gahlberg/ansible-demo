@@ -159,4 +159,8 @@ After building your VM complete the following steps:
 
 	![screenshot](docs/screenshots/bgp-summary.png)
 
+## Moving forward...
 
+Any questions or issues encountered feel free to reach out to me at gahlberg@diligent-networks.com
+
+That's all for now!
